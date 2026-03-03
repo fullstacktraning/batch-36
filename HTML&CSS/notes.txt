@@ -1,0 +1,277 @@
+Attributes
+    Attributes enhances HTML Element functionality
+    Attributes are "key & value" pairs
+    key & value separated by using "="
+    pairs are separated by using space
+    Attributes applicable to only opening tag
+
+Headings
+********
+    HTML Supports 6 Headings
+    1) <h1></h1>    main heading
+    2) <h2></h2>    sub heading
+    3) <h3></h3>      ""
+    4) <h4></h4>      ""
+    5) <h5></h5>      ""
+    6) <h6></h6>      ""
+
+    <h1></h1> is the large heading
+    <h6></h6> is the least heading
+
+external style sheet
+********************
+    <link> tag, is used to link external style sheet
+    <link> tag is non paired tag
+    <link> tag supports two attributes
+    1) rel="stylesheet"
+    2) href="name of the css file"
+
+grouping of selectors
+*********************
+    applying styles to more than one element at a time called as grouping of selectors
+    Ex.
+        h1,h2,h3,h4,h5,h6{
+
+        }
+
+        h1,p,div{
+
+        }
+padding
+*******
+    space around the content called as padding
+    Ex.
+        padding:20px;
+
+
+margin
+******
+    space around the html element called as margin
+    Ex.
+        margin :20px;
+
+box-model in css
+****************
+    combination of padding, border and margin called as box-model in css
+
+types of display
+****************
+CSS supports following displays
+1) block
+2) inline
+3) inline-block
+
+block
+*****
+    each element starts with new line
+    each element ocupies 100% width
+    Ex.
+        Headings
+        Paragraphs
+        Divisions
+        ---
+        ---
+        ---
+    below css snippet used to convert block level to inline
+    display : inline / inline-block;
+
+inline-block
+************
+    each element never starts with new line
+    no effect on original width, height,margins and paddings 
+    below css snippet used to convert inline to block
+    display: block;
+
+inline
+******
+    each element never starts with new line
+    original width,height,top and bottom margins will effect
+
+paragraphs
+**********
+    <p></p> tag, is used to display paragraphs
+    <p></p> tag is block level element
+
+element selector
+****************
+    element selector starts with "tag name"
+    Ex.
+        p{
+
+        }
+        div{
+
+        }
+        table{
+
+        }
+class selector
+**************
+    class selector starts with "." (dot)
+    element will identify based on class
+    Ex.
+
+    HTML                                CSS
+    ****                                ***
+    <p class="c1"></p>                  .c1{}
+    <div class="c2 c3"></div>           .c2{}
+                                        .c3{}
+
+id selector
+***********
+    id selector start with "#"
+    element will identify based on id
+    Ex.
+        HTML                            CSS
+        ****                            ***
+        <p id="id1"></p>                #id1{}
+
+what are the differences between class selector and id selector ?
+
+            class selector                      id selector
+*******************************************************************************************
+1) class selector starts with .(dot)        id selector starts with # (hash)
+
+2) class selector may duplicate             id selector must be unique
+
+3) class selector have less specificity     id selector have more specificity compared to
+   compared to id selector                  class selector
+
+4) usecase                                  usecase:
+        if multiple teams working               to dominate 3rd party styles we will use
+        on same project, then                   id selector
+        class selector suggested
+*******************************************************************************************
+
+divisions
+*********
+    it is used to divide webpage into multiple parts
+    <div></div> tag, is used to create divisions
+    <div></div> tag is block level element
+
+internal styles
+***************
+    including styles inside html page called as internal styles
+    <style></style> tag, used to include css inside html page
+    Ex.
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <style>
+
+                </style>
+            </head>
+            <body>
+
+            </body>
+        </html>
+
+what are the differences between external styles and internal styles?
+
+
+*******************************************************************************************************
+                    external styles                         internal styles
+*******************************************************************************************************
+1) <link> tag, used to include the external             <style></style> tag, is used to write
+   styles                                               internal styles
+
+2) <link> tag is non paired tag and supports            <style></style> tag is paired tag
+   two attributes
+   1) rel="stylesheet"
+   2) href
+
+3) we can achieve styles reusability                    we may not achieve styles reusability
+*******************************************************************************************************
+
+decendent selector
+******************
+    decendent selector are also called as "dependent selector"
+    select an "element" under "parent element" of "any depth"
+
+    HTML                            CSS
+    ****                            ***
+    <div>                           div h2{}
+        <h2></h2>
+    </div>
+
+    <div>                           div h2{}
+        <div>
+          <span>
+            <h2></h2>
+          <space>
+        <div>
+    </div>
+
+buttons
+*******
+    <button></button> tag, is used to display buttons in webpages
+    <button></button> tag is inline element
+    Ex.
+            <button>
+                Login
+            </button>
+
+in how many ways can we apply styles ?
+    we can apply styles in three ways
+    1) external
+    2) internal
+    3) inline
+
+    <link> tag, used to apply external styles
+    <style></style> tag, used to apply internal styles
+    style attribute, used to apply inline styles
+
+explain css specificity rule ?
+
+        inline > id selector > class selector > element selector > universal selector
+
+        inline styles have more specificity
+        universal selector have least specificity
+        "*", used to represent the universal selector
+
+images
+******
+    <img> tag used to display images
+    <img> tag is non paired tag
+    <img> tag is inline element
+
+    attributes
+    **********
+    1) width    
+        used to define image width
+    2) height   
+        used to define image height
+    3) src
+        used to refer image path/location
+    4) alt
+        alt stands for alternative text
+        if image display fails, automatically alternative text will display
+
+what are pseudo classes ?
+    pseudo classes are used to set special state to an element
+    we will apply pseudo classes with the help of ":"
+    Ex.
+            :hover
+            :first-of-type
+            :last-of-type
+            :nth-child
+            :not
+            ---
+            ---
+            ---
+            ---
+
+anchor element
+**************
+    <a></a> tag, used to create "hyper links"
+    <a></a> tag is "inline element"
+    advantages:
+    1) used to navigate from "one webpage to another webpage"
+    2) used to open "external websites"
+
+attributes
+**********
+1) src
+    used to refer "target path"
+2) target="_blank"
+    used to open "new tab" in browser
