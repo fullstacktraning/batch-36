@@ -275,3 +275,74 @@ attributes
     used to refer "target path"
 2) target="_blank"
     used to open "new tab" in browser
+
+Font awesome
+************
+    Font awesome is the css library
+    Font awesome used to display the symbols
+    Ex.
+            rupee symbol
+            dollar symbol
+            cart symbol
+            --
+            --
+            --
+            --
+    we will use Font awesome with the help of "CDN"
+    CDN Stands for "content delivery network"
+    we will include CDN in "head section" of webpage
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <i></i> tag, used to display symbols
+    Ex.
+            rupee symbol
+            ************
+            <i class="fa fa-rupee"></i>
+            <i class="fa fa-dollar"></i>
+
+Tables
+******
+    collection of rows and columns called as Table
+
+Tags
+****
+    <table></table> tag, is used to display tables
+    <tr></tr> tag, used to create "Table row"
+    <th></th> tag, used to display "table heading"
+    <td></td> tag, used to display table "cell data"
+
+Attributes
+**********
+1) border
+    used to draw border to the table
+    Ex.
+        border="1"
+
+2) align
+    used to align the table
+    Ex.
+        align="left" / "center" / "right"
+        default alignment is "left"
+
+3) cellpadding
+    space around the cell content called as cellpadding
+    Ex.
+        cellpadding="10"
+
+4) cellspacing
+    space between table cells called as cellspacing
+    Ex.
+        cellspacing="10"
+
+5) colspan
+    used to merge the cells horizontally (column wise)
+    Ex.
+        colspan="2"
+
+6) rowspan
+    used to merge the cells vertically (row wise)
+    Ex.
+        rowspan="2"
+
