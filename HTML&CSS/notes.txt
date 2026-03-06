@@ -346,3 +346,122 @@ Attributes
     Ex.
         rowspan="2"
 
+Lists
+*****
+    HTML Supports three types of Lists
+    1) unordered list
+    2) ordered list
+    3) definition list
+
+unordered list
+**************
+    <ul></ul> is the tag, used to create unordered list
+    <li></li> is the tag, used to create list item
+    syntax.
+        <ul>
+            <li></li>
+            <li></li>
+            ---
+            ---
+            ---
+        </ul>
+    attributes
+    **********
+    1) type = "disc" / "circle" / "square"
+        default is disc
+
+ordered list
+************
+    <ol></ol> is the tag, used to create ordered list
+    syntax.
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                ---
+                ---
+                ---
+            </ol>
+    Attributes
+    1) type = "A" / "a" / "I" / "i" / 1
+        default is number
+
+    2) start
+        used to specify starting list number
+        start="10"
+    
+    3) reversed
+         used to reverse the list numbers
+
+Nested List
+***********
+    one list inside another list called as Nested List
+
+Definition List
+***************
+    <dl></dl> stands for Definition List
+    <dt></dt> stands for Definition Term (Side Heading)
+    <dd></dd> stands for Definition Description (Theory under Side Heading)
+    syntax.
+            <dl>
+                <dt></dt>
+                <dd></dd>
+                <dd></dd>
+                ---
+                ---
+                ---
+
+                <dt></dt>
+                <dd></dd>
+                <dd></dd>
+                ---
+                ---
+                ---
+
+                <dt></dt>
+                <dd></dd>
+                <dd></dd>
+                ---
+                ---
+                ---
+            </dl>
+
+Forms
+*****
+    collection of related data called as Form
+    Ex.
+        Login Form
+        Registration Form
+        Enrollment Form
+        ---
+        ---
+        ---
+
+Tags
+****
+1) <form action="" method="GET/POST/PUT/DELETE" name="" onsubmit="" onreset=""></form>
+
+    <form></form> used to display the forms
+
+    action attribute, used to connect to backend
+    
+    method attribute, used to specify type of request
+    GET method, used to read the data from backend
+    POST method, used to send data to backend
+    PUT method, used to update backend data
+    DELETE method, used to delete backend data
+
+    name attribute, used to assign logical name to the form
+    Ex.
+        name="regForm"
+        where "regForm" is the logical name of the form
+
+    onsubmit attribute, used to handle the submit event
+    Ex.
+        onsubmit = "register()"
+            when ever we click submit button, automatically register() function will execute in javascript
+
+    onreset attribute, used to handle the reset event
+    Ex.
+        onreset = "cancel()"
+            when ever we click reset button, automatically cancel() function will execute in javascript
