@@ -465,3 +465,25 @@ Tags
     Ex.
         onreset = "cancel()"
             when ever we click reset button, automatically cancel() function will execute in javascript
+
+<input name="" type="" placeholder="">
+    used to create the input boxes in forms
+    <input> tag is non paired tag
+    placeholder attribute, used to display "helper text" (hint text)
+
+Radio buttons
+*************
+    Radio buttons also called as "single selection controls"
+
+check boxes
+***********
+    check boxes are also called as "multi selection controls"
+
+Dropdown
+********
+    <select></select> tag, is used to create the Dropdowns in forms
+    <option></option> tag, is used to populate the options to Dropdown
+
+TextArea
+********
+    <textarea></textarea> tag, used to enter the address
