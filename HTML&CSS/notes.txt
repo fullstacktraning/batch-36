@@ -487,3 +487,12 @@ Dropdown
 TextArea
 ********
     <textarea></textarea> tag, used to enter the address
+
+CSS Positions
+*************
+    CSS Supports below Positions
+    1) relative
+    2) absolute
+    3) fixed
+    4) sticky
+    5) static
