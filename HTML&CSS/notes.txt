@@ -496,3 +496,58 @@ CSS Positions
     3) fixed
     4) sticky
     5) static
+
+relative
+********
+    moving element from starting position called as "relative position"
+    relative position may not effect "original layout" of webpage
+
+z-index
+*******
+    z-index released in CSS3
+    z-index, used to change the order of elements in stack
+
+absolute
+********
+    child element position depending on closest ancestor(parent) called as absolute position
+    because of absolute position, original layout may effect
+    Ex.
+            position : absolute;
+            left :
+            right :
+            bottom :
+            top :
+
+what are the differences between relative and absolute position?
+
+*****************************************************************************************
+            relative                        absolute
+*****************************************************************************************
+1) moving element from                  moving element with respect to closest 
+   starting position                    ancestor called as absolute position
+   called as relative
+   position
+
+2) original layout may                  original layout will effect
+   not effect
+*****************************************************************************************
+
+fixed
+*****
+    used to fix element permently on webpage called as fixed position
+    syntax.
+            position: fixed;
+            left:
+            right:
+            top:
+            bottom:
+
+sticky
+******
+    element will stick on webpage while scrolling
+    Ex.
+        position : sticky;
+        top:
+        bottom:
+
+Note : "static" is the default position
