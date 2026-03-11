@@ -551,3 +551,56 @@ sticky
         bottom:
 
 Note : "static" is the default position
+
+
+<marquee></marquee>
+*******************
+    <marquee></marquee> tag, used to scroll the content
+    
+    attributes
+    **********
+    direction="right" / "left" / "up" / "down"
+        used to change the scrolling direction
+        default direction is "left"
+    width
+        used to define scrolling area
+        Ex.
+            width="50%"
+    scrollamount
+        used to control the scrolling speed
+
+<iframe></iframe>
+*****************
+    <iframe></iframe> tag used to:
+        1) include google maps
+        2) play youtube videos
+        3) open pdf files
+        4) open wikipedia files
+        5) include other webpages
+
+float
+*****
+    used to float element either "left" of the container or "right" of the container
+Syntax.
+    float : left / right;
+
+border-box
+**********
+    used to include "padding" and "border" in original width and height of an element
+    syntax.
+            box-sizing : border-box;
+
+<span></span>
+*************
+    used to select the portion of content
+    <span></span> tag is inline element
+    <span></span> tag also used to display validation messages
+
+CSS Dimensions
+**************
+    CSS Supports below Dimensions
+        1) rem (root em)
+        2) em
+        3) %
+        4) vw(viewport width) & vh(viewport height)
+        5) px (pixel)
