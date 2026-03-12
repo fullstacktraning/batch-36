@@ -604,3 +604,86 @@ CSS Dimensions
         3) %
         4) vw(viewport width) & vh(viewport height)
         5) px (pixel)
+
+rem
+***
+    rem stands for root em
+    1rem = 16px
+    all child elements dimension depending on parent element dimension
+
+em
+**
+    child element dimension depending on parent element dimension
+
+%(percentage)
+*************
+    measurement with respect to "screen" called as "%(percentage)"
+    "child element" dimension depending on "parent element" dimension
+
+vw(viewport width) & vh(viewport height)
+****************************************
+    measurement with respect to screen called as vw(viewport width) & vh(viewport height)
+    "child element" dimension won't dependent on "parent element" dimension
+
+px(pixel)
+*********
+    px is the default dimension
+    "each dot" on screen called as "px"
+
+CSS Grid
+********
+    CSS Grid Two Dimensional
+    CSS Grid mainly on layout design
+    by default CSS Grid is "Responsive"
+    in CSS Grid, we need parent-child re
+    lationship
+    parent always called as "grid container"
+
+CSS Grid Properties
+*******************
+1) display : grid;
+    used to initilize the CSS Grid layout
+
+2) grid-template rows
+    used to define number of rows
+    Ex.
+            grid-template-rows : 10% 80% 10%;
+                    (or)
+            grid-template-rows : 1fr 2fr 1fr;
+
+            fr - fraction
+
+3) grid-template-columns
+    used to define number of columns
+    Ex.
+        grid-template-columns:15% 70% 15%
+                (or)
+        grid-template-columns : 1fr 5fr 1fr;
+
+4) gap
+    used maintain the gap between grid items
+
+5) grid-column
+    used to adjust element with respect to x-axis
+    Ex.
+        grid-column:1/4;
+                   :1/-1;
+
+                   -1 represents last edge
+
+6) grid-row
+    used to adjust element with respect to y-axis
+    Ex.
+        grid-row:1/2;
+
+how to display element at center of webpage by using grid?
+Ex.
+        HTML                                                    CSS
+        ****                                                    ***
+        <div class="parent">                                    .parent{
+            <img src="logo.png" alt="CareerIT">                     display:grid;
+                                                                    place-items:center;
+        </div>                                                  }
+
+
+        

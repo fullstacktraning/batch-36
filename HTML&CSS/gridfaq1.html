@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Faq</title>
+        <style>
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 100px 1fr 100px;
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas: 
+                    "header header"
+                    "side content"
+                    "footer footer";
+            }
+            .header{
+                grid-area: header;
+                background-color: lightgreen;
+            }
+            .side{
+                grid-area: side;
+                background-color: lightcoral;
+            }
+            .content{
+                grid-area: content;
+                background-color: lightgrey;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="header">Header</div>
+            <div class="side">SideNav</div>
+            <div class="content">Content</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
