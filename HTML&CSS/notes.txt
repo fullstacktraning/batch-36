@@ -686,4 +686,82 @@ Ex.
         </div>                                                  }
 
 
-        
+CSS Flex
+********
+    CSS Flex, used to align items with respect to "main axis"
+    CSS Flex is one dimensional
+    CSS Flex mainly on "content" design
+    By default css flex is responsive
+    in CSS flex, we need parent and child relationship
+    parent container always called as "Flex Container"  
+    Ex.
+        display: flex;
+
+what are the differences between CSS Flex and CSS Grid ?
+
+
+***************************************************************************
+        CSS Flex                            CSS Grid
+***************************************************************************
+1) one dimensional                      two dimensional
+
+2) mainly on content                    mainly on layout
+
+3) Flex Container                       Grid Container
+
+4) display: flex;                       display: grid;    
+***************************************************************************
+
+Flex Properties
+***************
+1) display : flex;
+    block level display automatically converts to inline display
+
+2) gap  
+    used to maintain gap between flex items
+    Ex.
+        gap : 20px;
+
+3) justify-content : flex-start / 
+                     center / 
+                     flex-end / 
+                     space-between / 
+                     space-around / 
+                     space-evenly;
+    used to move element with respect to main axis
+    default value is flex-start
+
+4) align-items
+    used to move flex items vertically
+    height property mandatory
+    Ex.
+        height: 100vh;
+        align-items : flex-start / center / flex-end / stretch;
+
+    default value is "stretch"
+
+5) flex-direction : row / row-reverse / column / column-reverse;
+    used to change the direction of flex items
+    default value is "row"
+
+6) flex-wrap: nowrap / wrap / wrap-reverse;
+    used to wrap flex items to "new line"
+    default value is "nowrap"
+
+7) order    
+    used to change the "flex items" direction
+    Ex.
+        order: 10;
+
+how to display image at center of webpage by using flex?
+
+            <div class="parent">
+                <img src="logo.png" alt="CareerIT">
+            </div>
+
+            .parent{
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }
