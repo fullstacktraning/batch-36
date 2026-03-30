@@ -198,6 +198,123 @@
                result will be NaN
             --------------------------------------------------------------
          */
+
+ 
+          /*
+                bigint
+                ******
+                  used to store the large number
+                  bigint suffix with "n"
+                  range : 2^53 - 1 to -2^53 - 1
+          */
+
+          /*
+          var large = 123456789123456789123456789123456789123456789123456789n;
+          document.write(large);
+          */
+
+          /*
+               Symbol
+               ******
+                 Symbol is the primitive datatype
+                 Symbol datatype used to create unique identifiers
+                 Symbol datatype, used to achieve security
+          */
+          /*
+            r101 = Symbol("Test");
+            r102 = Symbol("Test");
+          */
+
+          /*
+                        variable hoisting
+                        *****************
+                            because of var keyword, variable declaration moved to top scope
+                            of application with undefined called as variable hoisting
+
+                            var keyword initilizes with "undefined"
+
+                            var keyword supports "hoisting"
+          
+          */
+        //   document.write(x);
+        //   document.write(x+100);
+        //   var x = 100;
+        //   document.write(x);
+        //   document.write(x+100);
+
+
+                        /*
+                            non primitive datatypes are the object data
+                            we can apply predefined properties and functions
+                            Ex.
+                                Arrays
+                                Objects
+                                functions
+                                interfaces
+                                classes
+                                ---
+                                ---
+                                ---
+                        */
+                        // var arr1 = [10,20,30,40,50];
+                        // document.write(arr1[0],`<br>`);
+                        // document.write(arr1[1],`<br>`);
+
+                        /*
+                            json
+                            ****
+                                javascript object notation
+                                javascript objects
+                                json, used to transfer the data over the network
+                                json is "light weight"
+                                Objects -- {}
+                                Arrays -- []
+                                Data -- key & value pairs
+                                        key & value separated by using ":"
+                                        key & value pairs are separated by using ","
+                        */
+                        // var obj = {
+                        //     key1 : 100,
+                        //     key2 : 200,
+                        //     key3 : 300
+                        // };
+                        // var x = obj.key1;
+                        // document.write(x);
+
+
+
+                        // let x = 100;
+                        // let x = 200;
+                        // document.write(x);
+                        //var : allows duplicates.      // 200
+                        //let won't allows duplicates.  // Err
+
+
+                        // let x = 100;
+                        
+                        // {
+                        //     let x = 200; 
+                        // }
+
+                        //document.write(x);
+                        //var : 200
+                        //let : 100
+
+                    /*
+                        what are the differences between var and let ?
+                                var                             let
+                        1) var introduced               let introduced in ES6 version
+                           in ES1 version
+
+                        2) var allows duplicates        let won't allows duplicates
+
+                        3) variable hoisting            let wont supports variable
+                           supports by var keyword      hoisting
+                        
+                        4) global polluting issue.      global polluting issue not raised
+                           raised by var keyword        by let kyword
+                    */
+
         </script>
     </body>
 </html>
