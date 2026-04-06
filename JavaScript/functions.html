@@ -4,9 +4,143 @@
         <title>Functios</title>
     </head>
     <body>
-        
-        
 
+        <!-- <script>
+            /*
+                constructor functions
+                *********************
+                    constructor functions are used to create "objects"
+                    "new" is the keyword, used to create "objects"
+                    each member in "constructor function" must starts with "this" keyword
+            */
+        </script> -->
+
+        <!-- <script>
+            function class_one(){
+                this.num1 = 200;
+                this.num2 = 100;
+            }
+            let obj = new class_one();
+            let x = obj.num1;
+            let y = obj.num2;
+            let add = x + y;
+            document.write(add);
+        </script> -->
+
+        <!-- <script>
+            function class_one(){
+                this.getNum1 = function(){
+                    return 200;
+                }
+                this.getNum2 = function(){
+                    return 100;
+                }
+            }
+            let obj = new class_one();
+            let num1 = obj.getNum1();
+            let num2 = obj.getNum2();
+            let add = num1 + num2;
+            document.write(add);
+        </script> -->
+
+        <!-- <script>
+            function class_one(){
+                this.num1 = 200;
+
+                this.getNum1 = function(){
+                    return this.num1;
+                }
+
+            }
+            let obj = new class_one();
+            let num1 = obj.getNum1();
+
+        </script> -->
+
+
+        <!-- <script>
+            function class_one(){
+
+            }
+            class_one.prototype.frontend = `ReactJS`;
+
+            let obj = new class_one();
+            let x = obj.frontend;
+            document.write(x);
+        </script> -->
+
+        <!-- <script>
+            function class_one(){
+
+            }
+            class_one.prototype.getFrontend = function(){
+                return "ReactJS";
+            }
+
+            let obj = new class_one();
+            let res1 = obj.getFrontend();
+            document.write(res1);
+        </script> -->
+
+        <!-- <script>
+            function class_one(){}
+            class_one.prototype.num1 = 300;
+
+            function class_two(){}
+            class_two.prototype = Object.create(class_one.prototype);
+            class_two.prototype.num2 = 200;
+
+            function class_three(){}
+            class_three.prototype = Object.create(class_two.prototype);
+            class_three.prototype.num3 = 100;
+
+            let obj = new class_three();
+            let x = obj.num1;
+        </script> -->
+
+        <script>
+            function class_one(){}
+            class_one.prototype.getFrontend = function(){
+                return "ReactJS";
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!--
+            function hoisting supports by "function declaration" and wont support by "function expression and arrow functions"
+        -->
+
+
+
+        <!-- <script>
+            let test_func = num1=>num1 * num1;
+            let res = test_func(10);
+            document.write(res);
+        </script> -->
+
+
+
+        <!-- <script>
+            let test_func = ()=>"Hello";
+            let res = test_func();
+            document.write(res);
+        </script> -->
 
 
         <!-- <script>
