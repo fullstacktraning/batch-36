@@ -2,8 +2,194 @@
 <html>
     <head>
         <title>Functios</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
+
+        <script>
+            $.ajax({
+                url : "https://www.w3schools.com/appml/customers.php",
+                method : "GET",
+                success : (posRes)=>{
+                   let obj = JSON.parse(posRes);
+                   let {records} = obj;
+                   document.write(`<table border="1" align="center" cellpadding="10" cellspacing="10">
+                                        <tr>
+                                            <th>CustomerName</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                        </tr>`);
+                    records.forEach((element,index)=>{
+                        document.write(`<tr>
+                                <td>${element.CustomerName}</td>
+                                <td>${element.City}</td>
+                                <td>${element.Country}</td>
+                            </tr>`);
+                    });
+                    document.write(`</table>`);
+                },
+                error : (errRes)=>{
+                    console.log(errRes);
+                }
+            });
+        </script>
+
+
+
+        <!-- <script>
+            let func_one = (param1)=>{
+                param1();
+            }
+
+            func_one( ()=>{
+                document.write(`welcome to callback functions !!!`);
+            } );
+        </script> -->
+
+        <!-- <script>
+            let addition = (num,callback)=>{
+                callback(num+5,false);
+            }
+            let subtraction = (num,callback)=>{
+                callback(num-3,false);
+            }
+            addition(5,(addRes,flag)=>{
+                if(!flag){
+                    subtraction(addRes,(subRes,flag)=>{
+                        if(!flag){
+                            document.write(subRes);
+                        }
+                    })
+                }
+            });
+        </script> -->
+
+        <!-- <script>
+            let promise1 = new Promise((resolve,reject)=>{
+                resolve(`Data from server soon...!`);
+            })
+            
+            // promise1.then((posRes)=>{
+            //     console.log(posRes);
+            // },(errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            let consume = async ()=>{
+                let res = await promise1;
+                document.write(res);
+            }
+            consume();
+        </script> -->
+
+        <!-- <script>
+            let addition = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num + 5);
+                })
+            }
+            let subtraction = (num)=>{
+                return new Promise((resolve,reject)=>{
+                    resolve(num - 3);
+                })
+            }
+            let consume = async ()=>{
+                let addRes = await addition(5);
+                let subRes = await subtraction(addRes);
+                document.write(subRes);
+            }
+            consume();
+        </script> -->
+
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                resolve("Hello");
+            })
+            let p2 = new Promise((resolve,reject)=>{
+                resolve("Welcome");
+            })
+            let p3 = new Promise((resolve,reject)=>{
+                resolve("JS !!!")
+            })
+            Promise.all([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            });
+        </script> -->
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                resolve("Hello");
+            })
+
+            let p2 = new Promise((resolve,reject)=>{
+                reject("Err");
+            })
+
+            let p3 = new Promise((resolve,reject)=>{
+                resolve("JS !!!")
+            })
+
+            // Promise.all([p1,p2,p3]).then((posRes)=>{
+            //     console.log(posRes);
+            // },(errRes)=>{
+            //     console.log(errRes);
+            // });
+
+            Promise.allSettled([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            });
+        </script> -->
+
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                resolve("Hello");
+            })
+            let p2 = new Promise((resolve,reject)=>{
+                resolve("Welcome");
+            })
+            let p3 = new Promise((resolve,reject)=>{
+                resolve("JS !!!")
+            })
+            Promise.race([p1,p2,p3]).then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            });
+        </script> -->
+
+        <!-- <script>
+            let p1 = new Promise((resolve,reject)=>{
+                setTimeout( ()=>{
+                    resolve("MySQL Soon...!")
+                }, 5000 );
+            });
+            let p2 = new Promise((resolve,reject)=>{
+                setTimeout( ()=>{
+                    resolve("MongoDB Soon...!")
+                }, 1000 );
+            });
+            p1.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+            p2.then((posRes)=>{
+                console.log(posRes);
+            },(errRes)=>{
+                console.log(errRes);
+            })
+        </script> -->
+
+
+
+
+
 
         <!-- <script>
             /*
