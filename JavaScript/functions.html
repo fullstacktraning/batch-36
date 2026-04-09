@@ -6,7 +6,118 @@
     </head>
     <body>
 
+        <!-- <script>
+            /*
+                IIFE
+                ****
+                    Immidiate Invokable Functional Expression
+                    when ever we define the function, it will invoke(execute) automatically
+                    called as IIFE
+                    IIFE, used to overcome global polluting issue
+                    Syntax.
+                        (function(param1,param2,param3,....param n){
+                            business logic
+                        })(arg1,arg2,arg3,.... arg n)
+
+                        ((param1,param2,param3,...param n)=>{
+                            business logic
+                        })(arg1,arg2,arg3,....arg n)
+            */
+        </script> -->
+        
+        <!-- <script>
+            (()=>{
+                document.write(`welcome to IIFE`);
+            })()
+        </script> -->
+
+        <!-- <script>
+            let res = (()=>{
+                return 100;
+            })()
+            document.write(res)
+        </script> -->
+
+        <!-- <script>
+            let res = ((num1)=>num1 * num1)(100)
+            document.write(res);
+        </script> -->
+
+        <!-- <script>
+            /*
+                generator functions
+                *******************
+                    generator functions are used to 
+                    1) pause the execution
+                    2) resume the execution
+                    3) read data value by value
+                    usecase:
+                    1) async flows
+                    2) lazy loading
+
+                    generator functions starts with "*"
+                    yield is the keyword, used to pause the execution
+                    next() is the function, used to resume the execution
+
+            */
+
+        </script> -->
+
+        <!-- <script>
+            function *test_func(){
+                yield 100;
+                yield 200;
+                yield 300;
+            }
+            let cursor = test_func();
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+            console.log( cursor.next() );
+        </script> -->
+
+        <!-- <script>
+            function *test_func1(){
+                yield 1000;
+                yield *func_one2();
+                yield 3000;
+            }
+            function *func_one2(){
+                yield 2000;
+            }
+            let cursor = test_func1();
+            // console.log(cursor.next());
+            // console.log(cursor.next());
+            // console.log(cursor.next());
+            // console.log(cursor.next());
+            for(let i=0;i<=3;i++){
+                console.log(cursor.next());
+            }
+        </script> -->
+
         <script>
+            function *test_func(){
+                yield 10000;
+                yield 20000;
+                return 30000;
+                yield 40000;
+            }
+            let cursor = test_func();
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+            console.log(cursor.next());
+        </script>
+
+
+
+
+
+
+
+
+
+        <!-- <script>
             $.ajax({
                 url : "https://www.w3schools.com/appml/customers.php",
                 method : "GET",
@@ -32,7 +143,7 @@
                     console.log(errRes);
                 }
             });
-        </script>
+        </script> -->
 
 
 
