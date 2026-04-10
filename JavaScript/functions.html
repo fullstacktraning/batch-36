@@ -8,6 +8,73 @@
 
         <!-- <script>
             /*
+                pure function
+                *************
+                    output of function never effected by external factors called as pure functions
+            */
+        </script> -->
+
+        <script>
+            let res = 0;
+
+            let add = (num1,num2)=>{
+                res = res+num1+num2;
+
+                return res;
+            }
+
+            document.write( add(2,3) , `<br>`);
+            document.write( add(2,3) );
+        </script>
+
+
+
+
+        <!-- <script>
+            /*
+                HOF (Higher Order Functions)
+                ****************************
+                    in HOF we will
+                        1) pass one function definition to another function parameter
+                        2) one function return another function
+                    usecase:
+                        1) to implement clean & readable code
+                        2) to achieve code reusability
+
+            */
+        </script> -->
+
+        <!-- <script>
+            let outer = (num1)=>{
+                return (num2)=>{
+                    return num1 * num2;
+                }
+            }
+            let inner = outer(200);
+            let res = inner(100);
+            document.write(res);
+        </script> -->
+
+        <!-- <script>
+            let test_func1 = (param1)=>{
+                param1();
+            }
+
+            test_func1( ()=>{
+                document.write(`welcome to hof !!!`)
+            } );
+            
+        </script> -->
+
+
+
+
+
+
+
+
+        <!-- <script>
+            /*
                 IIFE
                 ****
                     Immidiate Invokable Functional Expression
@@ -95,7 +162,7 @@
             }
         </script> -->
 
-        <script>
+        <!-- <script>
             function *test_func(){
                 yield 10000;
                 yield 20000;
@@ -107,7 +174,7 @@
             console.log(cursor.next());
             console.log(cursor.next());
             console.log(cursor.next());
-        </script>
+        </script> -->
 
 
 
