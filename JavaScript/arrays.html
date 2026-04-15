@@ -156,7 +156,127 @@
             console.log(arr1);
         </script> -->
 
+        <!-- <script>
+            /*
+                splice()
+                    used to add/remove elements from any index
+                    mutable
+            */
+            
+            
+            arr1.splice(4,3);
+            console.log(arr1);      //[10, 20, 30, 40, 80, 90, 100]
 
+            arr1.splice(4,2);
+            console.log(arr1);      //[10, 20, 30, 40, 100]
+
+            arr1.splice(0,1);
+            console.log(arr1);      //[20, 30, 40, 100]
+
+            arr1.splice(0,1,10,20);
+            console.log(arr1);      //[10, 20, 30, 40, 100]
+
+            arr1.splice(4,0,50,60,70,80,90);
+            console.log(arr1);      //[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        </script> -->
+
+        <!-- <script>
+            /*
+                slice()
+                    used to choose elements from array
+                    immutable
+            */
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            console.log(arr1.slice(4,7));   //[50, 60, 70]
+            console.log(arr1.slice(0,1));   //[10]
+            console.log(arr1.slice(9));     //[100]
+            console.log( arr1.slice(5).concat(arr1.slice(0,5)) ); 
+                //[60, 70, 80, 90, 100, 10, 20, 30, 40, 50]
+           
+        </script> -->
+
+        <!-- <script>
+            /*
+                findIndex()
+                    used to find the index of a element in array
+                    if element found it will return index
+                    if element not found it will return -1
+            */
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            let i1 = arr1.findIndex((element,index)=>{
+                return element == 50;
+            });
+            console.log(i1);
+            let i2 = arr1.findIndex((element,index)=>{
+                return element == 100;
+            });
+            console.log(i2);
+            let i3 = arr1.findIndex((element,index)=>{
+                return element == 1000;
+            });
+            console.log(i3);
+
+            arr1.splice(arr1.findIndex((element,index)=>{
+                return element == 60;
+            }),1);
+            console.log(arr1);
+
+            //delete 40
+        </script> -->
+
+        <!-- <script>
+            /*
+                includes()
+                    used to perform search operation
+                    boolean function
+            */
+           let arr1 = [10,20,30,40,50,60,70,80,90,100];
+           console.log(arr1.includes(50));
+           console.log(arr1.includes(500));
+        </script> -->
+
+        <!-- <script>
+            /*
+                find()
+                    used to perform search operation
+                    this is number function
+                    if element found, it will return number otherwise undefined
+            */
+            let arr1 = [10,20,30,40,50,60,70,80,90,100];
+            console.log(
+                arr1.find((element,index)=>{
+                    return element == 50;
+                })
+            );
+
+            console.log(
+                arr1.find((element,index)=>{
+                    return element == 500;
+                })
+            );
+        </script> -->
+
+        <!-- <script>
+            /*
+                trim() - used to remove white spaces from begining and ending of a string
+                trimStart() - used to remove white space from begining of string
+                trimEnd() - used to remove white space at the end of string
+            */
+            let str = " hello ";
+            console.log(str.trim().length);
+            console.log(str.trimStart().length);
+            console.log(str.trimEnd().length);  
+        </script> -->
+
+        <!-- <script>
+            /*
+                padStart() - add required characters at begining of string
+                padEnd() - add required characters at end of string
+            */
+            let str = "hello";
+            console.log( str.padStart(10,"*").padEnd(15,"*") );
+        </script> -->
+        
 
 
 
