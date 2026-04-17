@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON !!!</title>
+    </head>
+    <body>
+        <!-- <script>
+            /*
+                JSON
+                ****
+                    Java Script Object Notation
+                            (or)
+                    Java Script Objects
+                    JSON, used to transfer the data over the Network
+                    JSON is light weight
+                    JSON is network friendly format
+                    Syntax.
+                        Objects -- {}
+                        Arrays. -- []
+                        Data.   -- key & value pairs
+                                   key & value separated by using ":"
+                                   pairs are separated by using ","
+            */
+        </script> -->
+        
+        <!-- <script>
+            let obj1 = {
+                frontend : "React",
+                backend : "NodeJS",
+                database : "MongoDB"
+            };
+            //sol1 : by using . (dot)
+            let e1 = obj1.frontend;
+            document.write(e1);
+
+            //sol2 : by using square operator([])
+            let e11 = obj1["frontend"];
+            document.write(e11);
+
+            //sol3: (destructring) (ES6)
+            let {frontend,backend,database} = obj1;
+            document.write(frontend,backend,database);
+
+            //sol4: for...in loop
+            for(let key in obj1){
+                document.write(obj1[key]);
+            }
+        </script> -->
+
+        <!-- <script>
+            let obj1 = {
+                frontend : "React",
+                backend : "NodeJS",
+                database : "MongoDB"
+            };
+            let arr1 = Object.keys(obj1);
+            console.log(arr1);
+            let arr2 = Object.values(obj1);
+            console.log(arr2);
+        </script> -->
+
+        <!-- <script>
+            let obj1 = {
+                frontend : "React",
+                backend : "NodeJS",
+                database : "MongoDB"
+            };
+            
+
+            let str = JSON.stringify(obj1);
+            console.log(typeof(str));       //string
+
+            let obj2 = JSON.parse(str);
+            console.log(typeof(obj2));      //object
+        </script> -->
+
+        <!-- <script>
+            let obj1 = {
+                frontend : "React",
+                backend : "NodeJS",
+                database : "MongoDB"
+            };
+            delete obj1.database;
+            console.log(obj1);
+        </script> -->
+
+        <!-- <script>
+            let obj1 = {
+                key1 : 100,
+                key1 : 200
+            };
+            console.log(obj1);
+        </script> -->
+
+        <!-- <script>
+            let obj1 = {
+                key1 : 100,
+                key2 : 100
+            };
+            console.log(obj1);
+        </script> -->
+
+        <script>
+            let emps = [{empId:"e101",empName:"Emp1",empDept:"CSE",empImg:"https://reqres.in/img/faces/1-image.jpg"},
+                        {empId:"e102",empName:"Emp2",empDept:"ECE",empImg:"https://reqres.in/img/faces/2-image.jpg"},
+                        {empId:"e103",empName:"Emp3",empDept:"EEE",empImg:"https://reqres.in/img/faces/3-image.jpg"},
+                        {empId:"e104",empName:"Emp4",empDept:"IT",empImg:"https://reqres.in/img/faces/4-image.jpg"},
+                        {empId:"e105",empName:"Emp5",empDept:"CIVIL",empImg:"https://reqres.in/img/faces/5-image.jpg"}];
+            document.write(`
+                <table border="1" align="center" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <th>empId</th>
+                        <th>empName</th>
+                        <th>empDept</th>
+                        <th>empImg</th>
+                    </tr>
+            `);
+            emps.forEach((element,index)=>{
+                document.write(`<tr>
+                    <td>${element.empId}</td>
+                    <td>${element.empName}</td>
+                    <td>${element.empDept}</td>
+                    <td>
+                        <img src=${element.empImg} width="80">   
+                    </td>
+                </tr>`);
+            });
+            document.write(`</table>`);
+        </script>
+
+
+
+    </body>
+</html>
