@@ -2,10 +2,102 @@
 <html>
     <head>
         <title>DOM Manipulations</title>
+        <style>
+            .c1{
+                color: green;
+            }
+            .c2{
+                color: red;
+            }
+        </style>
     </head>
     <body>
+        <ul id="my_ul"></ul>
 
-        <div></div>
+        <script>
+            let frag = document.createDocumentFragment();
+            for(let i=0;i<5;i++){
+                 let li = document.createElement("li");
+                 li.textContent = "Text "+i;
+                 frag.appendChild(li);
+            }
+            ul = document.getElementById("my_ul");
+            ul.appendChild(frag);
+        </script>
+
+
+
+
+        <!-- <button>Btn</button>
+        <script>
+            let btn = document.querySelector("button");
+            
+            function test_func(){
+                console.log("Hello");
+            }
+            
+            btn.addEventListener("click",test_func);
+            setTimeout(()=>{
+                btn.removeEventListener("click",test_func);
+                console.log("Removed");
+            },5000);
+        </script> -->
+
+
+
+
+
+        <!-- <h1 id="res">Hello</h1>
+        <button onclick="toggle_fn()">Toggle</button>
+        <script>
+            let toggle_fn = ()=>{
+                let h1 = document.getElementById("res");
+                h1.classList.toggle("c1");     
+            }
+        </script> -->
+
+
+
+
+
+        <!-- <fieldset>
+            <legend>LOGIN</legend>
+            
+            <input type="text" id="uname" placeholder="enter user name">
+            <br><br>
+            <input type="password" id="upwd" placeholder="enter password">
+            <br><br>
+            <button onclick="login()">Login</button>
+            <br><br>
+            <h1 id="res"></h1>
+        </fieldset>
+        <script>
+            let login = ()=>{
+               let uname = document.getElementById("uname").value; 
+               let upwd = document.getElementById("upwd").value;
+               let h1 = document.getElementById("res");
+               if(uname == "admin" && upwd == "admin@123"){
+                    h1.innerHTML = "Login Success";
+                    if(h1.classList.contains("c2")){
+                        h1.classList.remove("c2");
+                    }
+                    h1.classList.add("c1");
+               }else{
+                    h1.innerHTML="Login Fail";
+                    if(h1.classList.contains("c1")){
+                        h1.classList.remove("c1");
+                    }
+                    h1.classList.add("c2");
+               }
+            }
+        </script> -->
+
+        
+
+
+
+
+        <!-- <div></div>
         <script>
             //get ref of "div"
 
@@ -18,7 +110,7 @@
             //clone "h1" and add to "div"
 
             //remove "h6"
-        </script>
+        </script> -->
 
 
 
