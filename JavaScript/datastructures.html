@@ -48,12 +48,51 @@
             console.log(map);
         </script> -->
 
-        <script>
+        <!-- <script>
             let map = new WeakMap();
             let key1 = {};
             let value1 = 100;
             map.set(key1,value1);
             console.log(map);
+        </script> -->
+
+        <!-- <script>
+            let set = new Set();
+            set.add(10);
+            set.add(10);
+            set.add(20);
+            set.add(30);
+            console.log(set);
+
+            console.log(set.has(10));
+            console.log(set.has(1000));
+
+            console.log(set.size);
+
+            for(let x of set){
+                console.log(x);
+            }
+
+            // set.delete(10);
+            // console.log(set);
+
+            // set.clear();
+            // console.log(set);
+
+            arr = [...set]
+            console.log(arr);
+        </script> -->
+
+
+        <script>
+            let weakset = new WeakSet();
+            weakset.add({"num1":200});
+            weakset.add({"num2":100});
+            console.log(weakset);
         </script>
+
+
+
+
     </body>
 </html>

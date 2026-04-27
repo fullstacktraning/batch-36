@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Validations</title>
+        <link rel="stylesheet" href="validations.css">
+        <script src="validations.js"></script>
+    </head>
+    <body>
+        <form name="regForm" onsubmit="return register()">
+            <table>
+               <!-- FIRST NAME -->
+               <tr>
+                    <td>
+                        <label>First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter first name">
+                    </td>
+                    <td>
+                        <span id="fname_errors"></span>
+                    </td>
+               </tr>
+                
+                
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+
+
+        </form>
+    </body>
+</html>
